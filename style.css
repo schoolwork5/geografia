@@ -1,0 +1,129 @@
+/* Fonte global */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Barra superior fixa */
+#cantos {
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 10px 30px;
+}
+
+#reset {
+    font-weight: 500;
+}
+
+/* Jogo */
+#game {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 80px; /* Para ajustar o espaçamento devido à barra fixa */
+}
+
+/* Bandeira */
+#flagImage {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+#flagImage:hover {
+    transform: scale(1.05);
+}
+
+/* Opções de resposta */
+#options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+#options button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    margin: 8px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#options button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#options button:active {
+    transform: translateY(1px);
+}
+
+/* Feedback do resultado */
+#result {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+#result.incorrect {
+    color: #e74c3c;
+}
+
+
+/* Botão próximo */
+#nextButton {
+    background-color: #17a2b8;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#nextButton:hover {
+    background-color: #138496;
+    transform: translateY(-2px);
+}
+
+#nextButton:active {
+    transform: translateY(1px);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    font-size: 0.875rem;
+}
